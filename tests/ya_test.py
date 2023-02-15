@@ -1,7 +1,7 @@
 import unittest
 from ya import createfolder, get_folder_info
 
-DIRNAME = 'testdir'
+DIRNAME = 'test'
 
 class YandexAPITest(unittest.TestCase):
     def test_createfolder(self):
@@ -9,4 +9,4 @@ class YandexAPITest(unittest.TestCase):
         self.assertTrue(result == 201, f'Ответ сервера: {result}')
 
     def test_get_folder_info(self):
-        self.assertTrue(get_folder_info(DIRNAME) == 'testdir')
+        self.assertTrue(get_folder_info(DIRNAME) == 'test')

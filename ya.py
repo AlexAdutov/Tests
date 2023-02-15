@@ -1,7 +1,7 @@
 import json
 import requests
 
-token = 'y0_AgAAAAA9YtyoAADLWwAAAADTgsDRg5Wd6L4kSd-JdHnBpwfIVAO0tXI'
+token = 'XXXXXXXXX'
 apiurl = 'https://cloud-api.yandex.net/v1/disk/resources'
 headers = {'Authorization': 'OAuth ' + token}
 
@@ -22,5 +22,5 @@ def get_folder_info(folder_name):
 
 
 if __name__ == '__main__':
-    print(createfolder('dir'))
-    print(get_folder_info('dir'))
+    print(createfolder('test'))
+    print(get_folder_info('test'))
